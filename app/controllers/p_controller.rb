@@ -11,9 +11,6 @@ class PController < ApplicationController
   def customers
   end
 
-  def careers
-  end
-
   def specialized_training
   end
 
