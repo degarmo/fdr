@@ -1,17 +1,14 @@
-class PController < ApplicationController
+class PagesController < ApplicationController
   def index
   end
 
   def about
   end
 
-  def solutions
+  def contact
   end
 
   def customers
-  end
-
-  def specialized_training
   end
 
   def info_sys
@@ -21,6 +18,12 @@ class PController < ApplicationController
   end
 
   def medical
+  end
+
+  def solutions
+  end
+
+  def specialized_training
   end
 
   def staffing

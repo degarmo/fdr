@@ -1,23 +1,24 @@
 Rails.application.routes.draw do
-  get 'p/index'
+  root to: 'pages#index'
 
-  get 'p/about'
+  get 'pages/index'
 
-  get 'p/solutions'
+  get 'pages/about'
 
-  get 'p/customers'
+  get 'pages/contact'
 
-  get 'p/specialized_training'
+  get 'pages/customers'
 
-  get 'p/info_sys'
+  get 'pages/info_sys'
 
-  get 'p/languages'
+  get 'pages/languages'
 
-  get 'p/medical'
+  get 'pages/medical'
 
-  get 'p/staffing'
+  get 'pages/solutions'
 
-  root to: 'p#index'
+  get 'pages/specialized_training'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'pages/staffing'
+
 end
