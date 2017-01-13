@@ -7,8 +7,6 @@ Rails.application.routes.draw do
 
   get 'p/customers'
 
-  get 'p/careers'
-
   get 'p/specialized_training'
 
   get 'p/info_sys'
