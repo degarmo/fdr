@@ -43,14 +43,20 @@
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a></li>
+      	<li><%= link_to " Login", sign_in_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-
-
+	
 	<div class="container">
+		<br>
+		<div id="flash">
+	      <% flash.each do |key, value| %>
+	        <div class="flash <%= key %>"><%= value %></div>
+	      <% end %>
+	    </div>
+  
 	  <%= yield %>
 	</div>
 
