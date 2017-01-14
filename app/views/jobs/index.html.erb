@@ -10,11 +10,12 @@
 	</div>
 		<% @job.each do |job| %>
 		<div class="panel panel-default">
-			<div class="panel-body"> 	
-			 	<h2><%= link_to job.title, job %></h2>
-			   	<p><%= job.location %></p>
-			   	<p><%= job.pay%></p>
-			   	<p><%= job.description %></p>
+			<div class="panel-body">
+				<div class="page-header"> 	
+				 	<h1><%= link_to job.title, job %> <small> <%= job.location %></small></h1>
+				   	<h4><p><%= job.pay%></p></h4>
+				   	<p><%= job.description %></p>
+			   	</div>
 			</div>
 		 </div>
 	 	<% end %>
