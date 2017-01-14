@@ -1,8 +1,19 @@
 Rails.application.routes.draw do
+
   root to: 'pages#index'
+
+  resources :jobs   
+
+  get 'jobs/index'
+
+  get 'jobs/new'
+
+  get 'jobs/archive'
 
   get 'pages/index'
 
+  get 'pages/careers'
+  
   get 'pages/about'
 
   get 'pages/contact'

@@ -1,0 +1,36 @@
+  <div class="col-md-2">
+  	
+  </div>
+  
+  <div class="col-md-8">
+  		<div class="jumbotron job_splash">
+		<div>
+		  <h1>Job Postings</h1>
+		</div>
+	</div>
+		<% @job.each do |job| %>
+		<div class="panel panel-default">
+			<div class="panel-body"> 	
+			 	<h2><%= link_to job.title, job %></h2>
+			   	<p><%= job.location %></p>
+			   	<p><%= job.pay%></p>
+			   	<p><%= job.description %></p>
+			</div>
+		 </div>
+	 	<% end %>
+	</div>
+  </div>
+  
+  <div class="col-md-2">
+  	
+  </div>
+</div>
+<div class="row">
+	<div class="col-md-4"></div>
+
+	<div class="col-md-4"><p class="text-center">
+		<%= paginate @job, :class => "pagination" %></p>
+	</div>
+
+	<div class="col-md-4"></div>
+</div>

@@ -30,7 +30,7 @@ gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'simple_form', '~> 3.4'
 gem 'font-awesome-sass'
-
+gem 'kaminari', '~> 1.0'
 
 # Security Gems
 gem "clearance"
