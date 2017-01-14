@@ -10,8 +10,8 @@
 	- Medical Industry
 	- Website Creation
 	- Staffing
-- Intended Customers
-- Careers
+- Customers
+x Careers
 - Blog
 
 
@@ -19,13 +19,13 @@
 
 - Jobs page needs to allow for people to apply for jobs.
 - Contact page should be able to send allow people send msg to FDR
-- User acct
-- Admin Accounts
-- Regular user (not external)
+x User acct
+x Admin Accounts
+x Regular user (not external)
 
 
 ## UI
 
-- Bootstrap
+x Bootstrap
 
 - Needs a new logo.
