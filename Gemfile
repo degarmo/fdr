@@ -34,3 +34,5 @@ gem 'kaminari', '~> 1.0'
 
 # Security Gems
 gem "clearance"
+
+gem 'mail_form'
