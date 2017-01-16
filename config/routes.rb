@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-     
+
+
   root to: 'pages#index'
 
   get 'jobs/index'
@@ -34,5 +35,5 @@ Rails.application.routes.draw do
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
   resources :jobs
-    
+     
 end

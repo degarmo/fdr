@@ -188,7 +188,7 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.5)
   jquery-rails
-  kaminari (~> 0.16)
+  kaminari
   listen (~> 3.0.5)
   mail_form
   pg (~> 0.18)
