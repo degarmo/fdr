@@ -13,7 +13,7 @@
 		<div class="col-md-4">
 			<div class="text-center">
 				<br>
-				<h3><%= @job.pay %></h3>
+				<h3>$<%= @job.pay %></h3>
 				<h4>ID: <%= @job.id %></h4>
 				
 			</div>
@@ -24,7 +24,11 @@
 				<%= @job.description %>
 			</div>
 			<br>			
-			<button class="btn btn-primary">Apply</button>
+			<% if current_user %>
+              <%= link_to "Edit Job", edit_job_path, :class => "btn btn-info" %>
+            <% else %>
+              <%= link_to "Apply", "#", :class => "btn btn-primary" %>
+            <% end %>
 		</div>
 		<div class="col-md-1"></div>
 	</div>

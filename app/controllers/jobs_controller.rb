@@ -3,7 +3,7 @@ class JobsController < ApplicationController
 
 	
   def index
-  	@job = Job.page(params[:page]).per(10)
+  	@job = Job.page(params[:page]).per(10).order(created_at: :desc)
   end
 
   def new
@@ -30,6 +30,22 @@ class JobsController < ApplicationController
   def edit
     @job = Job.find(params[:id])
   end
+
+  def update
+    @job = Job.find(params[:id])
+    if @job.update(params.require(:job).permit(:title, :company, :pay, :location, :description))
+       flash[:notice] = "Successfully update job!"
+      redirect_to jobs_path
+    else
+       flash[:notice] = "Error updating job!"
+      render 'edit'
+    end
+  end
+
+  def archive
+    def archive        
+    update_attribute!(:displayed, false)
+  end 
 
 
   private
