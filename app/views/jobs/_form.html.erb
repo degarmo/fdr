@@ -1,12 +1,12 @@
 <div class="panel panel-default">
 	<div class="panel-body">
-		<%= simple_form_for @job do |form| %>
+		<%= simple_form_for @job do |form|%>
 			<%= form.input :title, label: "Job Title" %>
 			<%= form.input :company, label: "Agency" %>
-			<%= form.input :pay, label: "Compensation" %>
+			<%= form.input :pay, label: "Compensation" %> 
 			<%= form.input :location, label: "Location" %>
 			<%= form.input :description, label: "Details", :size => 4000 %>
 			<%= form.button :submit %>
 		<% end %>
 	</div>
-</div>
+</div>	
