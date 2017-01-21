@@ -37,3 +37,4 @@ gem "clearance"
 
 
 gem 'mail_form'
+gem 'sendgrid-ruby'
