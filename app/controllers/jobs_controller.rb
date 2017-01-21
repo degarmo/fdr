@@ -1,6 +1,7 @@
 class JobsController < ApplicationController
 	before_action :require_login, only: [:edit, :create, :new]
 	
+
   def index
     @job = Job.page(params[:page]).per(10).order(created_at: :desc)
   end
@@ -19,15 +20,15 @@ class JobsController < ApplicationController
   end
 
   def show
-    @job = Job.find(params[:id])
+    find_job
   end
 
   def edit
-    @job = Job.find(params[:id])
+    find_job
   end
 
   def update
-    @job = Job.find(params[:id])
+    find_job
     if @job.update(params.require(:job).permit(:title, :company, :pay, :location, :description))
       flash[:notice] = "Successfully update job!"
       redirect_to jobs_path
@@ -37,18 +38,15 @@ class JobsController < ApplicationController
     end
   end
 
-  def archive
-    update_attribute!(:displayed, false)
-  end 
-
-
   private
 
   def jobs_params
     params.require(:title).permit(:title, :company, :pay, :description)
   end
 
-  def find_jobs
-    @job = Jobs.find(params[:id])
+  def find_job
+    @job = Job.find(params[:id])
   end
+
+  
 end

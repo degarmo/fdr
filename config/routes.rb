@@ -1,13 +1,10 @@
 Rails.application.routes.draw do
 
-
   root to: 'pages#index'
 
   get 'jobs/index'
 
   get 'jobs/new'
-
-  get 'jobs/archive'
 
   get 'pages/index'
 
@@ -31,9 +28,13 @@ Rails.application.routes.draw do
 
   get 'pages/staffing'
 
+  
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
-  resources :jobs
-     
+
+  resources :jobs do
+    resources :archive, controller: 'jobs/archive'
+  end
+
 end
