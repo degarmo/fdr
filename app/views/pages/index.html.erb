@@ -1,2 +1,145 @@
-<h1>Pages#index</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+
+        <section class="no-mb">
+            <!-- *** JUMBOTRON ***
+ _________________________________________________________ -->
+
+            <div class="jumbotron">
+
+                <div class="dark-mask"></div>
+
+                <div class="container">
+                    <div class="row mb-small">
+                        <div class="col-sm-12 text-center">
+                            <h1>OUR MISSION</h1>
+                            <h2></h2>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6 mb-small">
+                            <i class="fa fa-globe fa-4x" aria-hidden="true" ></i>
+                        </div>
+
+                        <div class="col-sm-6 text-center-xs">
+                            <p class="text-uppercase">To Deliver Quality Solutions,
+                                <br>Steadfast Dedication To our clients needs
+                                <br>At home or around the globe    
+                                </p>
+                            <p>Join our team!</p>
+                            <p><%= link_to "Join The Team", jobs_path, :class => "scroll-to btn btn-template-transparent-black" %></a>
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- *** JUMBOTRON END *** -->
+        </section>
+
+        <section class="bar background-gray no-mb padding-big text-center-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-uppercase">Services <small>Highlight</small></h2>
+                        <p class="lead mb-small">Staffing</p>
+                        <p class="mb-small">FDR's hardwork and dedicaton will make finding the right candidate <strong>the easiest part of your human resources experience</strong>. If you're for one skilled nurse or team of engineers, we can make your staffing headaches go away. Trust FDR Inc.</p>
+
+                        <p><%= link_to "Read More", pages_staffing_path, :class => "btn btn-template-main" %></a>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="../assets/staffing.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bar no-mb color-white padding-big text-center-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="../assets/careers.jpg" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-uppercase">Work for FDR</h2>
+                        <p class="lead mb-small">Travel the world and get paid</p>
+                        <p class="mb-small">We pay top dollar for the talent that helps shape the world and it's citizens. We'll work hard for you because we know you'll work hard for us.</p>
+
+                        <%= link_to "Careers", jobs_path, :class => "btn btn-template-transparent-primary" %> 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bar background-gray no-mb padding-big text-center-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="text-uppercase">Contact FDR</h2>
+                        <p class="mb-small">Our dedicated team will work around the clock to deliver a solution for your team. Contact us to talk about how FDR can help you or your business.</p>
+
+                        <%= link_to "Contact Us", contacts_path, :class => "btn btn-template-main"%>
+                        </p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <img src="../assets/contactus.jpg" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Middle Section needs filling out
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+      
+        <section class="bar background-image-fixed-2 no-mb color-white text-center">
+            <div class="dark-mask"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="icon icon-lg"><i class="fa fa-bolt fa-lg"></i>
+                        </div>
+                        <h1>Want to know more about FDR?</h1>
+                        <p class="lead">With more than 60 years combined military and special forces training, we're <br>the best at spotting talent and getting the job done.</p>
+                        <p class="text-center">
+                        <%= link_to "About FDR", pages_about_path, :class => "btn btn-template-transparent-black btn-lg"%>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- *** GET IT ***
+_________________________________________________________ -->
+
+        <div id="get-it">
+            <div class="container">
+                <div class="col-md-8 col-sm-12">
+                    <h3>Who's working wtih FDR Inc.?</h3>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <%= link_to "FDR Partners", pages_customers_path, :class =>"btn btn-template-transparent-primary" %>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- *** GET IT END *** -->

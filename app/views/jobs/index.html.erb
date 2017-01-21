@@ -1,38 +1,76 @@
-  <div class="col-md-2">
-  	
-  </div>
-  
-  <div class="col-md-8">
-  		<div class="jumbotron job_splash">
-		<div>
-		  <h1>Job Postings</h1>
+<div id="heading-breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h1>Jobs</h1>
+                    </div>
+                    <div class="col-md-5">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+<div id="content">
+	<div class="container">
+
+	    <div class="row">
+
+	        <!-- *** LEFT COLUMN ***
+	 _________________________________________________________ -->
+		<div class="col-md-2">
+	
 		</div>
-	</div>
-		<% @job.each do |job| %>
+		<div class="col-md-8">
+		  	<% @job.each do |job| %>
 			<div class="panel panel-default">
-				<div class="panel-body">
+		    	<div class="panel-body">
 					<div class="page-header"> 	
-					  <h1><%= link_to job.title, job %> <small> <%= job.location %></small></h1>
-					  <h4><p>$<%= job.pay%></p></h4>
-					  <p><%= truncate(job.description, :length => 350) %></p>
-					  <p><%= link_to "Read More", job, :class => "btn btn-info" %></p>
-				   	</div>
-				</div>
+			  	      <h1><%= link_to job.title, job %> <small> <%= job.location %></small></h1>
+				      <h4><p>$<%= job.pay%></p></h4>
+				      <p><%= truncate(job.description, :length => 350) %></p>
+				      <p><%= link_to "Read More", job, :class => "btn btn-lg btn-info" %></p>
+				    </div>
+			    </div>
 			</div>
-	 	<% end %>
-	</div>
-  </div>
-  
-  <div class="col-md-2">
-  	
-  </div>
-</div>
-<div class="row">
-	<div class="col-md-4"></div>
+			<% end %>
+        </div>
+		
+		<div class="col-md-2">
+  	    
+  	    </div>
+	<div class="row">
+		<div class="col-md-4">
+			
+		</div>
 
-	<div class="col-md-4"><p class="text-center">
-		<%= paginate @job, :class => "pagination" %></p>
-	</div>
+		<div class="col-md-4 center-block">
+			<p><%= paginate @job, :class => "pagination" %></p>
+		</div>
 
-	<div class="col-md-4"></div>
-</div>
+		<div class="col-md-4"></div>
+		
+		</div>
+
+	                
+	        </div>
+	 	  </div>
+	    </div>
+	  </div>
+        <div id="get-it">
+            <div class="container">
+            	<div class="col-md-2">
+            		
+            	</div>
+                <div class="col-md-8 col-sm-12">
+                    <h2>Victorious warriors win <br>first and then go to war,
+                    <br>while defeated warriors go to war <br>first and then seek to win. <h3>Sun Tzu</h3></h2>
+                </div>
+                <div class="col-md-2 col-sm-12">
+                   
+                </div>
+            </div>
+        </div>
+
+
+        <!-- *** GET IT END *** -->
+
