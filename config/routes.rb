@@ -33,8 +33,6 @@ Rails.application.routes.draw do
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
-  resources :jobs do
-    resources :archive, controller: 'jobs/archive'
-  end
+  resources :jobs 
 
 end

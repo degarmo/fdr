@@ -48,5 +48,17 @@ class JobsController < ApplicationController
     @job = Job.find(params[:id])
   end
 
+  def create_archive
+    find_job.archive = true
+    find_job.save
+    redirect_to jobs_path
+  end
+
+  def destroy_archive
+    find_job.archive = false
+    find_job.save
+    redirect_to jobs_path
+  end
+
   
 end

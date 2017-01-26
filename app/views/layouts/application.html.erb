@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FDR Inc.</title>
+    <title>FDR Inc. || <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -178,12 +178,10 @@
 
         <!-- *** LOGIN MODAL ***
 _________________________________________________________ -->
-     <body>
-  
-
-
-  	  <%= yield %>
+    <body>
+        <%= yield %>
 	
+    
  <!-- *** FOOTER ***
 _________________________________________________________ -->
 
