@@ -40,7 +40,6 @@
 					<br>			
 					<% if current_user %>
 		              <%= link_to "Edit Job", edit_job_path, :class => "btn btn-info" %> |
-		              <%= link_to "Archive Job", job_archive_path(@job), method: :post, :class => "btn btn-warning" %>
 		            <% else %>
 		            	<br>
 		              <%= link_to "Apply", "#", :class => "btn btn-primary" %>
