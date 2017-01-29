@@ -1,13 +1,39 @@
-  <div class="col-md-2">
-  	
-  </div>
-  
-  <div class="col-md-8">
-  	<div class="text-center"><h1>Edit Job</h1></div>
-  	<%= render 'form', job: @job %>
-  </div>
-  
-  <div class="col-md-2">
-  	
-  </div>
+<% provide(:title, "Edit Job: #{@job.title} || Job ID: #{@job.id}") %>
+<div id="heading-breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+                <h1><%= "Edit Job: #{@job.title}" %></h1>
+            </div>
+        </div>
+    </div>
 </div>
+<hr>
+<div id="content">
+  <div class="container">
+        <div class="col-md-2">
+        	
+        </div>
+        
+        <div class="col-md-8">
+        	<%= render 'form', job: @job %>
+        </div>
+        
+        <div class="col-md-2">
+        	
+        </div>
+      </div>
+    </div>
+</div>
+<hr>
+  <br>
+    <section class="bar no-mb color-white">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                    
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
